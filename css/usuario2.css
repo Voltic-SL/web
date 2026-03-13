@@ -1,0 +1,80 @@
+.container-form{
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.container-form h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-usuario{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus{
+  outline: none;
+  border-color: #2563eb;
+}
+
+.btn-crear{
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-crear:hover{
+  background: #1d4ed8;
+}
+
+.mensaje{
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.ok{
+  background: #dcfce7;
+  color: #166534;
+}
+
+.error{
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.volver{
+  text-align: center;
+  margin-bottom: 20px;
+}

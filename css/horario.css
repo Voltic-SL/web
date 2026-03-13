@@ -1,0 +1,159 @@
+/* ================================================
+   ESTILOS: Página de Horario Personal
+   ================================================
+   Este archivo contiene todos los estilos visuales
+   para la página donde el profesor ve y edita su horario.
+   ================================================ */
+
+/* Contenedor principal de la página */
+.panel{
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Título principal de la página */
+.panel h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario para agregar nuevos horarios */
+.formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Estilos para campos de entrada de texto y selecciones */
+.formulario input,
+.formulario select{
+  padding: 10px;               /* Espacio interior */
+  border: 1px solid #ccc;      /* Borde gris suave */
+  border-radius: 6px;          /* Bordes redondeados */
+  font-size: 15px;             /* Tamaño del texto */
+}
+
+/* Cambiar color cuando el usuario hace clic en un campo */
+.formulario input:focus,
+.formulario select:focus{
+  outline: none;               /* Quitar borde por defecto */
+  border-color: #2563eb;       /* Cambiar borde a azul */
+}
+
+/* Estilo del botón "Guardar" (azul) */
+.btn{
+  background: #2563eb;         /* Color de fondo azul */
+  color: white;                /* Texto blanco */
+  border: none;                /* Sin borde */
+  padding: 8px 12px;           /* Espacio interior */
+  border-radius: 6px;          /* Bordes redondeados */
+  cursor: pointer;             /* Cursor de mano */
+}
+
+/* Cambiar color al pasar el mouse sobre el botón */
+.btn:hover{
+  background: #1d4ed8;         /* Azul más oscuro */
+}
+
+/* Estilo del botón "Eliminar" (rojo) */
+.btn-borrar{
+  background: #ef4444;         /* Color de fondo rojo */
+  color: white;                /* Texto blanco */
+  border: none;                /* Sin borde */
+  padding: 6px 10px;           /* Espacio interior */
+  border-radius: 6px;          /* Bordes redondeados */
+  cursor: pointer;             /* Cursor de mano */
+}
+
+/* Cambiar color al pasar el mouse sobre el botón de eliminar */
+.btn-borrar:hover{
+  background: #dc2626;         /* Rojo más oscuro */
+}
+
+/* Tabla que muestra el horario del profesor */
+.tabla{
+  width: 100%;                 /* Ocupar todo el ancho */
+  border-collapse: collapse;   /* Eliminar espacios entre celdas */
+}
+
+/* Encabezados de la tabla (fondo azul) */
+.tabla th{
+  background: #2563eb;         /* Color de fondo azul */
+  color: white;                /* Texto blanco */
+  padding: 10px;               /* Espacio interior */
+}
+
+/* Celdas de datos en la tabla */
+.tabla td{
+  padding: 10px;               /* Espacio interior */
+  border-bottom: 1px solid #ddd;  /* Línea gris debajo de cada fila */
+  text-align: center;          /* Alinear texto al centro */
+}
+
+/* Cambiar color de fondo al pasar el mouse sobre una fila */
+.tabla tr:hover{
+  background: #f5f5f5;         /* Fondo gris muy claro */
+}
+
+/* Mensaje de éxito o error que se muestra al usuario */
+.mensaje{
+  margin-bottom: 15px;         /* Espacio inferior */
+  font-weight: bold;           /* Texto en negrita */
+}
+
+/* Estilo general del body (toda la página) */
+body{
+  background: 1px solid #ccc
+}
+
+/* Contenedor de las opciones de módulo (Guardia o escribir otro) */
+.modulo-container {
+  display: flex;                 /* Mostrar los elementos en fila */
+  align-items: center;           /* Alinear verticalmente en el centro */
+  gap: 12px;                     /* Espacio entre los elementos */
+  margin-bottom: 15px;           /* Espacio inferior */
+}
+
+/* Estilo para la etiqueta con el checkbox "Guardia" */
+.checkbox-label {
+  display: flex;                 /* Mostrar en fila */
+  align-items: center;           /* Centrar verticalmente */
+  gap: 8px;                      /* Espacio entre checkbox y texto */
+  cursor: pointer;               /* Mostrar cursor de mano al pasar */
+  font-size: 14px;               /* Tamaño del texto */
+  white-space: nowrap;           /* Evitar que el texto se rompa */
+}
+
+/* Estilo del checkbox (la casilla) */
+.checkbox-label input[type="checkbox"] {
+  cursor: pointer;               /* Cursor de mano */
+  width: 18px;                   /* Ancho de la casilla */
+  height: 18px;                  /* Alto de la casilla */
+}
+
+/* Estilo de la "o" que separa las dos opciones */
+.separator {
+  color: #999;                   /* Color gris */
+  font-size: 14px;               /* Tamaño pequeño */
+}
+
+/* Estilo del campo de texto para escribir otro módulo */
+.modulo-container input[type="text"] {
+  padding: 8px;                  /* Espacio interno */
+  border: 1px solid #ccc;        /* Borde gris */
+  border-radius: 6px;            /* Bordes redondeados */
+  font-size: 14px;               /* Tamaño del texto */
+  flex: 0 0 auto;                /* No crecer ni encoger */
+  max-width: 250px;              /* Ancho máximo */
+}
+
+/* Cambia el color del borde cuando el usuario escriba en el campo */
+.modulo-container input[type="text"]:focus {
+  outline: none;                 /* Quitar el borde por defecto */
+  border-color: #2563eb;         /* Cambiar a azul */
+}

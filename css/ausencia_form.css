@@ -1,0 +1,123 @@
+/* Estilos para la página de comunicar ausencia */
+
+/* Panel principal */
+.panel {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.panel h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.formulario textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Botón */
+.btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* Enlace volver */
+.volver {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Mensaje */
+.mensaje {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Contenedor de franjas */
+.franjas-container {
+  margin: 15px 0;
+}
+
+.franjas-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.franjas-list {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.franja-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.franja-checkbox:hover {
+  background-color: #e8f0fe;
+}
+
+.franja-checkbox input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+}
+
+.franja-checkbox span {
+  font-size: 14px;
+  user-select: none;
+}
+
+/* Fondo de la página */
+body {
+  background-color: white;
+}

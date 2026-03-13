@@ -1,0 +1,135 @@
+.panel {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.panel h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+}
+
+.tabla td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabla tr:hover {
+  background: #f5f5f5;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.volver {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.filtros {
+  margin-bottom: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.filtros label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.filtros select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Tabla de guardias cubiertas mejorada */
+.tabla-cubiertas {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.tabla-cubiertas th {
+  background: #2563eb;
+  color: white;
+  padding: 12px 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tabla-cubiertas td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabla-cubiertas .fila-par {
+  background: #f0f4f8;
+}
+
+.tabla-cubiertas .fila-impar {
+  background: white;
+}
+
+.tabla-cubiertas tr:hover {
+  background: #e0ebf7;
+}
+
+.tabla-cubiertas .profesor-nombre {
+  font-weight: 600;
+  text-align: left;
+  color: #1a202c;
+}
+
+.tabla-cubiertas .dia {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.tabla-cubiertas .hora {
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.tabla-cubiertas .contador {
+  text-align: center;
+}
+
+.badge {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.tabla-cubiertas .sin-datos {
+  text-align: center;
+  padding: 20px !important;
+  color: #666;
+}
